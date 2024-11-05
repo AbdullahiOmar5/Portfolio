@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/eb82c64b07.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <a href="index.html"><img src="assets/no_back_logo_1.png" alt="Logo" class="logo"></a>
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fas fa-times" onclick="closeMenu()"></i>
+                </ul>
+                <i class="fas fa-bars" onclick="openMenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p class="skill">Sofware Developer</p>
+                <h1>Hi, I'm <span>Abdullahi</span> <br> Omar from Somalia.</h1>
+            </div>
+        </div>
+    </div>
+    <!----------------About------------------------->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about_col_1">
+                    <img src="assets/IMG_2099_0.png" alt="">
+                </div>
+                <div class="about_col_2">
+                    <h1 class="sub_title">About Me</h1>
+                    <p>Hi, I’m Abdullahi Omar, a dedicated Computer Science student at Somali National University in Mogadishu, Somalia. 
+                        My journey in technology began with a fascination for how things work behind the scenes, which led me to dive deep into the world of website development. 
+                        Over time, I’ve honed my skills in both frontend and backend development, creating user-friendly and efficient web application.</p>
+                    <div class="tab_titles">
+                        <p class="tab_links active_link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab_links" onclick="opentab('education')">Education</p>
+                        <p class="tab_links" onclick="opentab('experience')">Experience</p>
+                        
+                    </div>
+                    <div class="tab_contents active_tab" id="skills">
+                        <ul>
+                            <li><span>Web Development</span><br>web app development</li>
+                            <li><span>UI/UX Design</span><br>design web/app interfaces</li>
+                            <li><span>App Development</span><br>Android/IOS App Development</li>
+                        </ul>
+                    </div>
+                    <div class="tab_contents" id="education">
+                        <ul>
+                            <li><span>2024-current</span><br>Web development Course at W3 Schools & SYD</li>
+                            <li><span>2023-2024</span><br>ui/ux design course at Youtube</li>
+                            <li><span>2023-2024</span><br>app Development at SYD and online platforms</li>
+                        </ul>
+                    </div>
+                    <div class="tab_contents" id="experience">
+                        <ul>
+                            <li><span>2024-current</span><br>worked as web developer and designer</li>
+                            <li><span>2023-2024</span><br>ui/ux designer at Maandeeq</li>
+                            <li><span>2023-2024</span><br>app developer at different companies</li>
+                        </ul>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!------------------Services--------------------------->
+    <div id="services">
+        <div class="container">
+            <h1 class="sub_title">My Services</h1>
+            <div class="services_list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Web Design</h2>
+                    <p>I design powerful desktop applications tailored to meet your unique needs. With a focus on usability and performance, my apps are built to enhance productivity while providing a smooth, intuitive user interface.</p>
+                    <a href="#">Learn More..</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-crop-simple"></i></i>
+                    <h2>UI/UX</h2>
+                    <p>I specialize in crafting user-centered interfaces that deliver engaging and efficient experiences. From wireframes to prototypes, I ensure that both aesthetics and functionality come together to create intuitive designs.</p>
+                    <a href="#">Learn More..</a>
+                </div>
+                <div>
+                    <i class="fa-brands fa-app-store"></i>
+                    <h2>App Design</h2>
+                    <p>I design robust and intuitive desktop applications tailored to your specific needs. My approach combines efficiency and elegance, creating software that enhances productivity while maintaining an easy-to-use interface.</p>
+                    <a href="#">Learn More..</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-----------------Portfolio----------------------------->
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub_title">My Work</h1>
+            <div class="work_list">
+                <div class="work">
+                    <img src="assets/work_1.jpg" alt="">
+                    <div class="layer">
+                        <h3>Website App</h3>
+                        <p>We will design your Website in easy way..</p>
+                        <a href=""><i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="assets/work_2.jpg" alt="">
+                    <div class="layer">
+                        <h3>Designing App</h3>
+                        <p>Designing your app like that..</p>
+                        <a href=""><i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="assets/work_3.jpg" alt="">
+                    <div class="layer">
+                        <h3>Social Media App</h3>
+                        <p>The app will connect you people around the world..</p>
+                        <a href=""><i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="" class="btn">See more..</a>
+        </div>
+    </div>
+
+    <!------------------Contact--------------------------->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub_title">Contact Me</h1>
+                    <p><i class="fas fa-paper-plane"></i>AbdallaOmer@gmail.com</p>
+                    <p><i class="fa-solid fa-square-phone"></i>+252619959704</p>
+                    <div class="social-icons">
+                        <a href="" ><i class="fa-brands fa-facebook"></i></a>
+                        <a href="" ><i class="fa-brands fa-twitter-square"></i></a>
+                        <a href="" ><i class="fa-brands fa-instagram"></i></a>
+                        <a href="" ><i class="fa-brands fa-linkedin"></i></a>
+                    </div>
+                    <a href="Abdullahi_Omar_CV.pdf" download class="btn btn2"> Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your name" required>
+                        <input type="email" name="Email" placeholder="Your email" required>
+                        <textarea name="Message" rows="5" placeholder="Your message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>copyright &copy;Abdullahi Omar</p>
+        </div>
+    </div>
+</body>
+</html>
+<!------------------About--------------------------->
+<script>
+    var tab_links = document.getElementsByClassName("tab_links");
+    var tab_contents = document.getElementsByClassName("tab_contents");
+    function opentab(tabname){
+        for(tab_link of tab_links){
+            tab_link.classList.remove("active_link");
+        }
+        for(tab_content of tab_contents){
+            tab_content.classList.remove("active_tab");
+        }
+        event.currentTarget.classList.add("active_link")
+        document.getElementById(tabname).classList.add("active_tab")
+    }
+    // for small screen sidemenu
+    var sidemenu = document.getElementById("sidemenu");
+    function openMenu(){
+        sidemenu.style.right= "0";
+    }
+    function closeMenu(){
+        sidemenu.style.right="-200px";
+    }
+</script>
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbxWa8rAq8g4C08You6neFP33bQkzTPUa2oZECR7JaW586x7vuF_1xMSIKu9Va82pkXD/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg");
+
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML= "Message Sent Successfully."
+            setTimeout(function(){
+                msg.innerHTML = ""
+            }, 5000)
+            form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
